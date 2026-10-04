@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY RESUME</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="icon" type="icon" href="images/android.png">	
+</head>
+<body>
+
+	<div class="header">
+		<img id="my_pic" src="images/abhi.jpg">
+		<span id="name_in_header"> Abhimanyu </span>
+		<span class="header_detail"> Android Developer </span>
+		<span id="hypen_in_header"> &nbsp - &nbsp </span>
+		<span class="header_detail"> Web Developer </span>
+	</div>
+
+	<div class="topnav" id="navbar">
+		<a id="name_in_navigation" class="nav_btn active" href="#my_pic">Abhimanyu</a>
+		<div id="nav_links">
+			<a class="nav_btn" href="#edu_qualification">Qualifications</a>
+			<a class="nav_btn" href="#what_i_do">What I Do</a>
+			<a class="nav_btn" href="#tech_skills">Skills</a>
+			<a class="nav_btn" href="#footer">Contact</a>
+		</div>
+		<a id="nav_icon" href="javascript:void(0);" onclick="responsiveNavFunc()">&#9776;</a>
+	</div>
+
+	<div class="content">
+
+		<div id="empty_space"></div>
+
+		<div class="jump" id="edu_qualification">
+			
+			<p class="heading"> Educational Qualifications</p>
+
+			<class id="edu_qual" class="yellow_text">
+				<div class="edu_clg my_card">
+					<p class="blue_text bold large_font center_text"> B-Tech</p>
+					<p class="small_font"> 7.8 CGPA </p>
+					<p class="small_font"> 2015-2019 </p>
+					<p class="small_font"> SASTRA University, Thanjavur</p>
+				</div>
+				<div class="edu_12th my_card">
+					<p class="blue_text bold large_font center_text"> 12<sup>th</sup></p>
+					<p class="small_font"> 440/500 (CBSE) </p>
+					<p class="small_font"> 2013-2015 </p>
+					<p class="small_font"> MAHARISHI INTERNATIONAL RESIDENTIAL SCHOOL, SRIPERAMBUDUR</p>
+				</div>
+				<div class="edu_10th my_card">
+					<p class="blue_text bold large_font center_text"> 10<sup>th</sup></p>
+					<p class="small_font"> 10.0 GPA </p>
+					<p class="small_font"> 2013 </p>
+					<p class="small_font"> ORDNANCE CLOTHING FACTORY SCHOOL, AVADI, CHENNAI 54</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="jump" id="what_i_do">
+			<p class="heading"> What I Do </p>
+			<div class="what_i_do_images">
+				<div class="android_img my_card yellow_text">
+					<img  src="images/android.png" width="100px" height="100px"> 
+					<br>
+					<span class="small_font bold_text"> ANDROID APPS </span>
+				</div>
+
+				<div class="web_img my_card yellow_text">
+					<img  src="images/web.png" width="100px" height="100px">
+					<br>
+					<span class="small_font bold_text"> WEBSITES </span>  
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="jump" id="tech_skills">
+			<p class="heading"> Technical Skills</p>
+
+			<div class="list yellow_text bold_text">
+				<div class="skill_prog my_card">
+					<p class="blue_text bold medium_font caps_text center_text"> Programming Languages </p>
+					<ul>
+						<li> C </li>
+						<li> C++ </li>
+						<li> JAVA </li>
+						<li> PYTHON </li>
+					</ul>
+				</div>
+				<div class="skill_technical my_card">
+					<p class="blue_text bold medium_font caps_text center_text"> Technical Skills </p>
+					<ul>
+						<li> App Development </li>
+						<li> Webpage Development </li>
+						<li> UI Designing </li>
+						<li> Database Management </li>
+						<li> Technical Content Writing </li>
+					</ul>
+				</div>
+				<div class="skill_technology my_card">
+					<p class="blue_text bold medium_font caps_text center_text"> Technologies Used </p>
+					<ul>
+						<li> HTML </li>
+						<li> CSS </li>
+						<li> PHP </li>
+						<li> JavaScript </li>
+						<li> XML </li>
+					</ul>
+				</div>
+				<div class="skill_softwares my_card">
+					<p class="blue_text bold medium_font caps_text center_texts"> Softwares Used </p>
+					<ul>
+						<li> Android Studio </li>
+						<li> MySql </li>
+						<li> SQLite </li>
+						<li> Git </li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="footer" class="jump">
+		<p class="heading"> Contact </p>
+		<div id="footer_details" class="my_card">
+			<span class="contact_heading blue_text"> E-mail id</span>
+			<a class="contact_detail yellow_text" href="mailto:abhimanyu.n14@gmail.com" > abhimanyu.n14@gmail.com </a>
+			<br>
+			<span class="contact_heading blue_text"> Mobile </span>
+			<a class="contact_detail yellow_text" href="#footer"> 7845984290 </a>
+			<br>
+			<span class="contact_heading blue_text"> Resume </span>
+			<a class="contact_detail yellow_text" href="https://www.visualcv.com/abhimanyu14" > Click to view... </a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		
+		//	Responsive NavBar
+		function responsiveNavFunc() {
+			var x = document.getElementById("navbar");
+			// var child = document.getElementsByClassName("nav_btn");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+				// var y = document.getElementById("name_in_navigation");
+				// x.removeChild(y);
+			} else {
+				x.className = "topnavs";
+				// var node = document.createElement("p");
+				// var textnode = document.createTextNode("ABHIMANYU");
+				// node.appendChild(textnode);
+				// node.id = "name_in_navigation";
+				// x.appendChild(node);
+			}
+		}
+
+		// Smooth scrolling
+		$(document).ready(function(){
+  			// Add smooth scrolling to all links
+  			$("a").on('click', function(event) {
+
+    		// Make sure this.hash has a value before overriding default behavior
+    		if (this.hash !== "") {
+      			// Prevent default anchor click behavior
+      			event.preventDefault();
+
+      			// Store hash
+      			var hash = this.hash;
+
+      			// Using jQuery's animate() method to add smooth page scroll
+      			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      			$('html, body').animate({
+      				scrollTop: $(hash).offset().top
+      			}, 1000, function(){
+
+        				// Add hash (#) to URL when done scrolling (default click behavior)
+        				window.location.hash = hash;
+        			});
+      		}
+      	});
+  		});
+		
+		// Add active class to the current button (highlight it)	
+		var header = document.getElementById("navbar");
+		var btns = header.getElementsByClassName("nav_btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function() {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+				//	responsiveNavFunc();
+			});
+		}
+
+		window.onscroll = function() {   
+			changeActive()
+		};
+
+		var offset1 = document.getElementById("my_pic").offsetTop - 64;
+		var offset2 = document.getElementById("edu_qualification").offsetTop - 64;
+		var offset3 = document.getElementById("what_i_do").offsetTop - 64;
+		var offset4 = document.getElementById("tech_skills").offsetTop - 64;
+		var offset5 = document.getElementById("footer").offsetTop - 64;
+		var btns = header.getElementsByClassName("nav_btn");
+		function changeActive() {
+			if (window.pageYOffset < offset2) {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				btns[0].className += " active";
+			} else if (window.pageYOffset >= offset2 && window.pageYOffset < offset3 ) {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				btns[1].className += " active";
+			} else if (window.pageYOffset >= offset3 && window.pageYOffset < offset4 ) {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				btns[2].className += " active";
+			} else if (window.pageYOffset >= offset4 && window.pageYOffset < offset5 ) {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				btns[3].className += " active";
+			} else if (window.pageYOffset >= offset5) {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				btns[4].className += " active";
+			}
+		} 
+	</script>
+</body>
+</html>
